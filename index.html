@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gridley grid analysis</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --oval:#14432f; --turf:#1f6b47; --chalk:#f4f6f1; --paper:#ffffff; --ink:#172019; --muted:#5d6b62; --line:#d9e0da;
+  --gold:#e3b23c; --hot:#b23a2c; --cool:#2f6f9f;
+  --body:"Barlow",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --cond:"Barlow Condensed","Arial Narrow",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){ --chalk:#0f1a14; --paper:#15231b; --ink:#e7ede8; --muted:#9fb1a5; --line:#29392f; --oval:#0c2b1e; --turf:#2c8a5d; --hot:#ef6b5b; --cool:#6fb0e0; }
+}
+:root[data-theme="dark"]{ --chalk:#0f1a14; --paper:#15231b; --ink:#e7ede8; --muted:#9fb1a5; --line:#29392f; --oval:#0c2b1e; --turf:#2c8a5d; --hot:#ef6b5b; --cool:#6fb0e0; }
+:root{ box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px); }
+*,*::before,*::after{ box-sizing:inherit; }
+body{ margin:0; background:var(--chalk); color:var(--ink); font:16px/1.5 var(--body); }
+header{ background:var(--oval); color:#f4f6f1; padding:24px 20px 20px; }
+.wrap{ max-width:1100px; margin:0 auto; }
+h1{ font:700 clamp(2.2rem,6vw,3.4rem)/0.95 var(--cond); margin:0; }
+header p{ margin:8px 0 0; max-width:62ch; color:#cfe0d5; }
+#status{ margin-top:10px; font-size:.9rem; color:#cfe0d5; } #status.warn{ color:#ffd58a; }
+main{ padding:18px 20px 40px; }
+.bar{ display:flex; flex-wrap:wrap; gap:12px 20px; align-items:flex-end; margin-bottom:16px; }
+label.group{ display:flex; flex-direction:column; gap:4px; font-size:.8rem; color:var(--muted); }
+select{ font:500 1rem var(--body); color:var(--ink); background:var(--paper); border:1px solid var(--line); border-radius:6px; padding:7px 9px; }
+.btn{ font:700 1rem var(--cond); background:var(--turf); color:#fff; border:0; border-radius:6px; padding:8px 14px; cursor:pointer; }
+button:focus-visible,select:focus-visible,.cell:focus-visible{ outline:2px solid var(--gold); outline-offset:2px; }
+.stats{ display:flex; flex-wrap:wrap; gap:8px 28px; margin:0 0 18px; }
+.stat b{ font:700 1.6rem/1 var(--cond); display:block; }
+.stat span{ font-size:.85rem; color:var(--muted); }
+.layout{ display:grid; grid-template-columns:minmax(0,1.2fr) minmax(0,1fr); gap:20px; align-items:start; }
+@media (max-width:860px){ .layout{ grid-template-columns:1fr; } }
+.grid{ display:grid; grid-template-columns:minmax(70px,.8fr) repeat(3,minmax(0,1fr)); gap:4px; }
+.hd{ font:700 .95rem/1.1 var(--cond); text-align:center; padding:6px 4px; display:flex; flex-direction:column; justify-content:center; align-items:center; }
+.hd small{ font:600 .7rem var(--body); color:var(--muted); }
+.cell{ background:var(--paper); border:1px solid var(--line); border-radius:6px; padding:8px; text-align:left; cursor:pointer; min-height:118px; font:inherit; color:inherit; display:flex; flex-direction:column; gap:3px; }
+.cell[aria-pressed="true"]{ border:2px solid var(--turf); padding:7px; }
+.cell .pct{ font:700 1.5rem/1 var(--cond); }
+.cell .sub{ font-size:.78rem; color:var(--muted); line-height:1.3; }
+.cell .who{ font-size:.82rem; line-height:1.3; }
+.hidden-names .who{ filter:blur(5px); }
+.panel{ background:var(--paper); border:1px solid var(--line); border-radius:6px; padding:12px 14px; }
+.panel h2{ font:700 1.3rem/1.1 var(--cond); margin:0 0 4px; }
+.panel p.desc{ margin:0 0 10px; font-size:.88rem; color:var(--muted); }
+.tools{ display:flex; gap:10px; flex-wrap:wrap; margin-bottom:8px; font-size:.85rem; }
+.tablewrap{ overflow:auto; max-height:520px; }
+table{ border-collapse:collapse; width:100%; font-size:.9rem; }
+th,td{ padding:5px 6px; border-bottom:1px solid var(--line); text-align:right; white-space:nowrap; }
+th{ position:sticky; top:0; background:var(--paper); font:600 .8rem var(--cond); color:var(--muted); cursor:pointer; }
+td.l,th.l{ text-align:left; } td.zero{ color:var(--cool); font-weight:600; }
+.dist{ display:grid; grid-template-columns:auto 1fr auto; gap:3px 8px; align-items:center; font-size:.85rem; margin-top:18px; }
+.dist .b{ height:12px; background:var(--turf); border-radius:2px; }
+.note{ font-size:.85rem; color:var(--muted); margin-top:14px; max-width:80ch; }
+@media (prefers-reduced-motion:reduce){ *{ transition:none!important; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Gridley grid analysis</h1>
+    <p>Every valid answer for each cell of a daily Gridley grid, with how many players picked it. Copied from gridleygame.com each day and kept here as an archive.</p>
+    <div id="status" role="status">Loading&hellip;</div>
+  </div>
+</header>
+<main class="wrap">
+  <div class="bar">
+    <label class="group">Grid<select id="date"></select></label>
+    <button class="btn" id="reveal" type="button" hidden>Show today&rsquo;s answers</button>
+  </div>
+  <div class="stats" id="stats"></div>
+  <div class="layout">
+    <div>
+      <div class="grid" id="grid"></div>
+      <div class="dist" id="dist" aria-label="Correct cells per completed grid"></div>
+    </div>
+    <div class="panel" id="panel"><p class="desc">Pick a cell to see every valid answer.</p></div>
+  </div>
+  <p class="note">Picked % = picks &divide; completed grids, the same figure Gridley shows on each cell. Answers in blue had no picks when the grid was copied. A cell&rsquo;s correct % = completed grids with that cell right &divide; completed grids.</p>
+</main>
+<script>
+(() => {
+  const ROOT = 'data/';
+  const st = document.getElementById('status');
+  const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
+  const fail = msg => { st.className = 'warn'; st.textContent = msg; };
+  const getJSON = async url => { const r = await fetch(url, { cache: 'no-cache' }); if (!r.ok) throw new Error(`${url}: HTTP ${r.status}`); return r.json(); };
+  const todayMel = new Intl.DateTimeFormat('en-CA', { timeZone: 'Australia/Melbourne' }).format(new Date());
+
+  let P = new Map(), G = null, DATE = null, sel = null, revealed = false, sortKey = 'n', sortDir = -1, onlyZero = false;
+  const name = id => P.get(+id)?.name ?? `Unknown player #${id}`;
+  const years = id => { const p = P.get(+id); return p ? `${p.first}\u2013${p.last >= new Date().getFullYear() ? 'now' : p.last}` : ''; };
+  const pct = (n, d) => d ? n / d * 100 : 0;
+  const fmtPct = v => v < 1 ? v.toFixed(1) + '%' : v.toFixed(0) + '%';
+  const hidden = () => DATE === todayMel && !revealed;
+  const label = it => `${esc(it.title)}${it.subtitle ? `<small>${esc(it.subtitle)}</small>` : ''}`;
+
+  function cellInfo(r, c) {
+    const m = G.correctAnswersPlayerMap[r][c];
+    const list = Object.entries(m).map(([id, n]) => ({ id: +id, n }));
+    const picked = list.filter(x => x.n > 0).sort((a, b) => b.n - a.n);
+    return { list, top: picked[0], rare: picked[picked.length - 1], zero: list.length - picked.length, correct: G.correctGuesses[r][c] };
+  }
+
+  function render() {
+    const done = G.completed;
+    const totalCorrect = G.scoreMap.reduce((a, n, i) => a + n * i, 0);
+    document.getElementById('stats').innerHTML = [
+      [`#${G.level}`, DATE], [G.started.toLocaleString(), 'started'], [done.toLocaleString(), 'completed'],
+      [done ? (totalCorrect / done).toFixed(1) : '\u2013', 'average cells right'], [fmtPct(pct(G.scoreMap[9] ?? 0, done)), 'got all 9']
+    ].map(([b, s]) => `<div class="stat"><b>${esc(b)}</b><span>${esc(s)}</span></div>`).join('');
+    const g = document.getElementById('grid');
+    g.className = 'grid' + (hidden() ? ' hidden-names' : '');
+    let h = '<div></div>' + G.hItems.map(it => `<div class="hd" title="${esc(it.description)}">${label(it)}</div>`).join('');
+    G.vItems.forEach((v, r) => {
+      h += `<div class="hd" title="${esc(v.description)}">${label(v)}</div>`;
+      for (let c = 0; c < 3; c++) {
+        const x = cellInfo(r, c);
+        h += `<button class="cell" type="button" data-r="${r}" data-c="${c}" aria-pressed="${sel && sel[0] === r && sel[1] === c}">
+          <span class="pct">${fmtPct(pct(x.correct, done))}</span><span class="sub">correct, ${x.list.length} valid answers, ${x.zero} unpicked</span>
+          <span class="who">Most: ${x.top ? `${esc(name(x.top.id))} ${fmtPct(pct(x.top.n, done))}` : '\u2013'}</span>
+          <span class="who">Rarest picked: ${x.rare ? `${esc(name(x.rare.id))} ${fmtPct(pct(x.rare.n, done))}` : '\u2013'}</span></button>`;
+      }
+    });
+    g.innerHTML = h;
+    const max = Math.max(...G.scoreMap, 1);
+    document.getElementById('dist').innerHTML = '<span></span><span class="sub">Cells right per completed grid</span><span></span>' +
+      G.scoreMap.map((n, i) => `<span>${i}</span><div class="b" style="width:${(n / max * 100).toFixed(1)}%"></div><span>${n.toLocaleString()}</span>`).join('');
+    document.getElementById('reveal').hidden = !hidden();
+    renderPanel();
+  }
+
+  function renderPanel() {
+    const el = document.getElementById('panel');
+    if (!sel) { el.innerHTML = '<p class="desc">Pick a cell to see every valid answer.</p>'; return; }
+    const [r, c] = sel, hi = G.hItems[c], vi = G.vItems[r], x = cellInfo(r, c);
+    if (hidden()) { el.innerHTML = `<h2>${esc(vi.title)} + ${esc(hi.title)}</h2><p class="desc">Answers for today&rsquo;s grid are hidden. Use &ldquo;Show today&rsquo;s answers&rdquo; to see them.</p>`; return; }
+    let rows = x.list.map(a => ({ ...a, name: name(a.id), yrs: years(a.id), p: pct(a.n, G.completed) }));
+    if (onlyZero) rows = rows.filter(a => a.n === 0);
+    rows.sort((a, b) => { const va = a[sortKey], vb = b[sortKey]; return (typeof va === 'string' ? va.localeCompare(vb) : va - vb) * sortDir || a.name.localeCompare(b.name); });
+    const th = (k, t, cls = '') => `<th class="${cls}" data-k="${k}"${sortKey === k ? ` aria-sort="${sortDir < 0 ? 'descending' : 'ascending'}"` : ''}>${t}${sortKey === k ? (sortDir < 0 ? ' \u2193' : ' \u2191') : ''}</th>`;
+    el.innerHTML = `<h2>${esc(vi.title)}${vi.subtitle ? ' ' + esc(vi.subtitle) : ''} + ${esc(hi.title)}${hi.subtitle ? ' ' + esc(hi.subtitle) : ''}</h2>
+      <p class="desc">${esc(vi.description)} ${esc(hi.description)}</p>
+      <div class="tools"><label><input type="checkbox" id="zero"${onlyZero ? ' checked' : ''}> Only unpicked answers</label><span>${x.list.length} valid, ${x.zero} unpicked, ${x.correct.toLocaleString()} correct</span></div>
+      <div class="tablewrap"><table><thead><tr>${th('name', 'Player', 'l')}${th('yrs', 'Career', 'l')}${th('n', 'Picks')}${th('p', 'Picked %')}</tr></thead><tbody>
+      ${rows.map(a => `<tr><td class="l${a.n === 0 ? ' zero' : ''}">${esc(a.name)}</td><td class="l">${esc(a.yrs)}</td><td>${a.n.toLocaleString()}</td><td>${a.p.toFixed(1)}%</td></tr>`).join('')}
+      </tbody></table></div>`;
+    el.querySelector('#zero').onchange = e => { onlyZero = e.target.checked; renderPanel(); };
+    el.querySelector('thead').onclick = e => { const k = e.target.closest('th')?.dataset.k; if (!k) return; if (k === sortKey) sortDir *= -1; else { sortKey = k; sortDir = ['name', 'yrs'].includes(k) ? 1 : -1; } renderPanel(); };
+  }
+
+  async function loadDate(d) {
+    DATE = d; sel = null; revealed = false;
+    try { G = await getJSON(`${ROOT}grids/${d}.json`); }
+    catch (e) { fail(`Grid ${d} couldn't be loaded (${e.message}).`); return; }
+    render();
+  }
+
+  document.getElementById('grid').addEventListener('click', e => {
+    const b = e.target.closest('.cell'); if (!b) return;
+    sel = [+b.dataset.r, +b.dataset.c]; render();
+  });
+  document.getElementById('date').addEventListener('change', e => loadDate(e.target.value));
+  document.getElementById('reveal').addEventListener('click', () => { revealed = true; render(); });
+
+  (async () => {
+    let dates, meta = null;
+    try {
+      const [players, idx] = await Promise.all([getJSON(`${ROOT}players.json`), getJSON(`${ROOT}grids/index.json`)]);
+      P = new Map(players.map(p => [p.id, p])); dates = idx;
+      try { meta = await getJSON(`${ROOT}meta.json`); } catch (e) {}
+    } catch (e) { fail(`Data couldn't be loaded (${e.message}).`); return; }
+    if (!dates.length) { fail('No grids archived yet. Run the workflow from the Actions tab.'); return; }
+    document.getElementById('date').innerHTML = dates.map(d => `<option value="${esc(d)}">${esc(d)}${d === todayMel ? ' (today)' : ''}</option>`).join('');
+    const when = meta?.fetchedAt ? new Date(meta.fetchedAt).toLocaleString('en-AU', { dateStyle: 'medium', timeStyle: 'short' }) : null;
+    st.textContent = `${dates.length.toLocaleString()} grids archived, ${P.size.toLocaleString()} players.${when ? ` Last copied ${when}.` : ''}`;
+    await loadDate(dates[0]);
+  })().catch(e => fail(`Page error: ${e.message}`));
+})();
+</script>
+</body>
+</html>

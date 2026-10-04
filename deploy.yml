@@ -1,0 +1,109 @@
+# Copies Gridley's player list and recent daily grids into this repository (data/), commits them so the
+# archive builds up over time, then publishes the site to GitHub Pages.
+# Runs daily just after midnight Melbourne time, on every upload to main, and on demand.
+# On demand (Actions tab > Run workflow) you can set "backfill_days" to also fetch older grids that aren't archived yet.
+name: Archive grids and deploy
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '40 13 * * *'   # 00:40 AEDT / 23:40 AEST
+  workflow_dispatch:
+    inputs:
+      backfill_days:
+        description: 'Also fetch grids this many days back (0 = just the last 3 days)'
+        required: false
+        default: '0'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+env:
+  BASE: https://gridleygame.com/data
+  UA: "Mozilla/5.0 (compatible; gridley-analysis archive; https://github.com/markjovic/gridley-analysis)"
+
+jobs:
+  archive-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Fetch player list
+        run: |
+          set -euo pipefail
+          mkdir -p data/grids
+          curl -fsSL --retry 3 --retry-delay 15 -A "$UA" "$BASE/players/players.json" -o data/players.tmp
+          if ! jq -e 'type == "array" and length > 0 and (.[0] | has("id") and has("name"))' data/players.tmp > /dev/null; then
+            echo "::error::players.json is not the expected format"; head -c 300 data/players.tmp; exit 1
+          fi
+          mv data/players.tmp data/players.json
+          echo "Players: $(jq length data/players.json)"
+
+      - name: Fetch grids
+        env:
+          BACKFILL: ${{ github.event.inputs.backfill_days || '0' }}
+        run: |
+          set -euo pipefail
+          case "$BACKFILL" in ''|*[!0-9]*) echo "::error::backfill_days must be a whole number, got '$BACKFILL'"; exit 1;; esac
+          LAST=$(( BACKFILL > 2 ? BACKFILL : 2 ))
+          FETCHED=0; SKIPPED=0; MISSING=0
+          for i in $(seq 0 "$LAST"); do
+            D=$(TZ=Australia/Melbourne date -d "-$i day" +%F)
+            OUT="data/grids/$D.json"
+            # The last 3 days are always refreshed (pick counts keep moving); older archived days are left alone.
+            if [ "$i" -gt 2 ] && [ -f "$OUT" ]; then SKIPPED=$((SKIPPED+1)); continue; fi
+            CODE=$(curl -sS -A "$UA" -o grid.tmp -w '%{http_code}' "$BASE/grids/$D.json" || echo 000)
+            if [ "$CODE" = 200 ] && jq -e 'has("hItems") and has("vItems") and has("correctAnswersPlayerMap")' grid.tmp > /dev/null 2>&1; then
+              mv grid.tmp "$OUT"; FETCHED=$((FETCHED+1))
+            elif [ "$i" -eq 0 ]; then
+              echo "::error::Today's grid ($D) could not be fetched: HTTP $CODE"; head -c 300 grid.tmp || true; exit 1
+            else
+              echo "::warning::Grid $D not available: HTTP $CODE"; MISSING=$((MISSING+1)); rm -f grid.tmp
+            fi
+            if [ "$i" -gt 2 ]; then sleep 2; fi
+          done
+          ls data/grids | grep -E '^[0-9]{4}-[0-9]{2}-[0-9]{2}\.json$' | sed 's/\.json$//' | sort -r | jq -R . | jq -s . > data/grids/index.json
+          printf '{"fetchedAt":"%s"}\n' "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > data/meta.json
+          echo "Fetched $FETCHED, skipped $SKIPPED already archived, $MISSING unavailable. Archive now holds $(jq length data/grids/index.json) grids."
+
+      - name: Commit archive
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then echo "No changes to commit"; else
+            git commit -m "Archive grids $(TZ=Australia/Melbourne date +%F)"
+            git push
+          fi
+
+      - name: Build site
+        run: |
+          set -euo pipefail
+          if [ ! -f index.html ]; then echo "::error::index.html is missing from the repository"; exit 1; fi
+          mkdir -p _site
+          cp index.html _site/
+          cp -r data _site/
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
