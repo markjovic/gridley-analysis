@@ -57,7 +57,8 @@ jobs:
           set -euo pipefail
           case "$BACKFILL" in ''|*[!0-9]*) echo "::error::backfill_days must be a whole number, got '$BACKFILL'"; exit 1;; esac
           LAST=$(( BACKFILL > 2 ? BACKFILL : 2 ))
-          FETCHED=0; SKIPPED=0; MISSING=0
+          FETCHED=0; SKIPPED=0; MISSING=0; MISS_RUN=0
+          STOP_AFTER=14   # stop backfilling after this many unavailable days in a row (the archive has started)
           for i in $(seq 0 "$LAST"); do
             D=$(TZ=Australia/Melbourne date -d "-$i day" +%F)
             OUT="data/grids/$D.json"
@@ -65,11 +66,16 @@ jobs:
             if [ "$i" -gt 2 ] && [ -f "$OUT" ]; then SKIPPED=$((SKIPPED+1)); continue; fi
             CODE=$(curl -sS -A "$UA" -o grid.tmp -w '%{http_code}' "$BASE/grids/$D.json" || echo 000)
             if [ "$CODE" = 200 ] && jq -e 'has("hItems") and has("vItems") and has("correctAnswersPlayerMap")' grid.tmp > /dev/null 2>&1; then
-              mv grid.tmp "$OUT"; FETCHED=$((FETCHED+1))
+              mv grid.tmp "$OUT"; FETCHED=$((FETCHED+1)); MISS_RUN=0
             elif [ "$i" -eq 0 ]; then
               echo "::error::Today's grid ($D) could not be fetched: HTTP $CODE"; head -c 300 grid.tmp || true; exit 1
             else
-              echo "::warning::Grid $D not available: HTTP $CODE"; MISSING=$((MISSING+1)); rm -f grid.tmp
+              if [ "$CODE" = 200 ]; then WHY="HTTP 200 but the response is not a grid"; else WHY="HTTP $CODE"; fi
+              echo "::warning::Grid $D not available: $WHY"; MISSING=$((MISSING+1)); MISS_RUN=$((MISS_RUN+1)); rm -f grid.tmp
+              if [ "$i" -gt 2 ] && [ "$MISS_RUN" -ge "$STOP_AFTER" ]; then
+                echo "::notice::$STOP_AFTER days in a row unavailable back to $D, so the archive has reached the start of Gridley. Stopping backfill."
+                break
+              fi
             fi
             if [ "$i" -gt 2 ]; then sleep 2; fi
           done
