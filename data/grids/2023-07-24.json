@@ -1,0 +1,193 @@
+{
+    "hItems": [
+        {
+            "id": "WC",
+            "title": "West Coast Eagles",
+            "subtitle": null,
+            "description": "Played at least 1 game for the West Coast Eagles, or currently on their list.",
+            "emoji": "\ud83e\udd85",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        },
+        {
+            "id": "KA",
+            "title": "North Melbourne",
+            "subtitle": null,
+            "description": "Played at least 1 game for the North Melbourne Kangaroos, or currently on their list.",
+            "emoji": "\ud83e\udd98",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        },
+        {
+            "id": "captain",
+            "title": "CLUB CAPTAIN",
+            "subtitle": "",
+            "description": "Captained their club for the majority of a season.",
+            "emoji": "\ud83e\udee1",
+            "showOnLaunch": false,
+            "theme": null,
+            "type": null,
+            "imgUrl": null
+        }
+    ],
+    "vItems": [
+        {
+            "id": "GW",
+            "title": "GWS Giants",
+            "subtitle": null,
+            "description": "Played at least 1 game for the GWS Giants, or currently on their list.",
+            "emoji": "\ud83d\udfe0",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        },
+        {
+            "id": "AD",
+            "title": "Adelaide Crows",
+            "subtitle": null,
+            "description": "Played at least 1 game for the Adelaide Crows, or currently on their list.",
+            "emoji": "\ud83d\udc26\u200d\u2b1b",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        },
+        {
+            "id": "moty",
+            "title": "MARK OF THE YEAR",
+            "subtitle": null,
+            "description": "Has won the Mark of the Year award. Includes recipients of the Channel Seven and ABC Mark of the Year awards (1970 to 2000).",
+            "emoji": "\ud83c\udfc5",
+            "showOnLaunch": false,
+            "theme": null,
+            "type": null,
+            "imgUrl": "\/img\/awards\/moty-2.png"
+        }
+    ],
+    "level": 8,
+    "completed": 9419,
+    "correctGuesses": [
+        [
+            5981,
+            6920,
+            9191
+        ],
+        [
+            4730,
+            7761,
+            9112
+        ],
+        [
+            8737,
+            5928,
+            5984
+        ]
+    ],
+    "correctAnswersPlayerMap": [
+        [
+            {
+                "3739": 1983,
+                "4243": 1363,
+                "5082": 0,
+                "7454": 2635
+            },
+            {
+                "66": 3861,
+                "69": 1883,
+                "1141": 706,
+                "2158": 470
+            },
+            {
+                "1333": 2160,
+                "3571": 8,
+                "3685": 64,
+                "4294": 171,
+                "4913": 343,
+                "5956": 1738,
+                "6445": 108,
+                "6721": 1607,
+                "6998": 2992
+            }
+        ],
+        [
+            {
+                "1395": 155,
+                "3248": 67,
+                "5114": 173,
+                "7269": 4335
+            },
+            {
+                "1102": 87,
+                "1276": 3,
+                "1516": 4,
+                "2382": 17,
+                "3211": 1594,
+                "3770": 75,
+                "4611": 11,
+                "5026": 96,
+                "5286": 1,
+                "6477": 883,
+                "6552": 148,
+                "7377": 4842
+            },
+            {
+                "1537": 243,
+                "4257": 2197,
+                "4359": 9,
+                "4968": 534,
+                "5013": 13,
+                "5020": 1043,
+                "5450": 549,
+                "5705": 102,
+                "5956": 9,
+                "6335": 2318,
+                "6654": 217,
+                "6861": 1724,
+                "7183": 140,
+                "7377": 14
+            }
+        ],
+        [
+            {
+                "503": 3147,
+                "4840": 3059,
+                "5508": 2531
+            },
+            {
+                "1179": 312,
+                "4930": 3938,
+                "5952": 217,
+                "6631": 17,
+                "7440": 1444
+            },
+            {
+                "137": 26,
+                "190": 311,
+                "2603": 542,
+                "4242": 2620,
+                "5136": 2485,
+                "5902": 0,
+                "7223": 0
+            }
+        ]
+    ],
+    "started": 13535,
+    "scoreMap": [
+        111,
+        63,
+        188,
+        328,
+        560,
+        885,
+        1267,
+        1682,
+        2135,
+        2200
+    ],
+    "social": null
+}

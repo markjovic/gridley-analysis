@@ -1,0 +1,245 @@
+{
+    "hItems": [
+        {
+            "id": "AD",
+            "title": "Adelaide Crows",
+            "subtitle": null,
+            "description": "Played at least 1 game for the Adelaide Crows, or currently on their list.",
+            "emoji": "\ud83d\udc26\u200d\u2b1b",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        },
+        {
+            "id": "ES",
+            "title": "Essendon",
+            "subtitle": null,
+            "description": "Played at least 1 game for the Essendon Bombers, or currently on their list.",
+            "emoji": "\ud83d\udee9\ufe0f",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        },
+        {
+            "id": "winaftersiren",
+            "title": "GAME WINNING",
+            "subtitle": "KICK AFTER SIREN",
+            "description": "Kicked a Goal or Behind after the siren to win the game. Doesn't include missed shots, or shots to tie.",
+            "emoji": "\u231b",
+            "showOnLaunch": true,
+            "theme": null,
+            "type": null,
+            "imgUrl": null
+        }
+    ],
+    "vItems": [
+        {
+            "id": "PA",
+            "title": "Port Adelaide",
+            "subtitle": null,
+            "description": "Played at least 1 game for Port Adelaide Power in the AFL (1997 onwards), or currently on their list.",
+            "emoji": "\u26a1",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        },
+        {
+            "id": "FR",
+            "title": "Fremantle",
+            "subtitle": null,
+            "description": "Played at least 1 game for the Fremantle Dockers, or currently on their list.",
+            "emoji": "\u2693",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        },
+        {
+            "id": "SK",
+            "title": "St Kilda",
+            "subtitle": null,
+            "description": "Played at least 1 game for the St Kilda Saints, or currently on their list.",
+            "emoji": "\ud83d\ude07",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        }
+    ],
+    "level": 24,
+    "completed": 17063,
+    "correctGuesses": [
+        [
+            11459,
+            14784,
+            14933
+        ],
+        [
+            10004,
+            12298,
+            14447
+        ],
+        [
+            11762,
+            12798,
+            10935
+        ]
+    ],
+    "correctAnswersPlayerMap": [
+        [
+            {
+                "929": 7886,
+                "1114": 1001,
+                "1183": 616,
+                "1948": 600,
+                "3248": 642,
+                "5105": 714
+            },
+            {
+                "384": 3370,
+                "1133": 0,
+                "1497": 678,
+                "1759": 838,
+                "2640": 2340,
+                "3791": 155,
+                "5641": 4945,
+                "5675": 1868,
+                "6529": 283,
+                "7426": 307,
+                "7445": 0
+            },
+            {
+                "1767": 6724,
+                "3730": 660,
+                "5839": 862,
+                "6171": 6687
+            }
+        ],
+        [
+            {
+                "1516": 458,
+                "1810": 308,
+                "4249": 957,
+                "7184": 8281
+            },
+            {
+                "33": 3567,
+                "1744": 378,
+                "2051": 644,
+                "4490": 1616,
+                "4999": 315,
+                "5712": 0,
+                "6439": 1492,
+                "6648": 50,
+                "7010": 347,
+                "7162": 281,
+                "7199": 2601,
+                "7451": 1007
+            },
+            {
+                "1551": 212,
+                "1988": 6463,
+                "3817": 560,
+                "4329": 4809,
+                "5326": 1961,
+                "5987": 442
+            }
+        ],
+        [
+            {
+                "1089": 8845,
+                "1267": 59,
+                "2388": 462,
+                "3665": 178,
+                "5112": 192,
+                "6628": 479,
+                "7079": 1547
+            },
+            {
+                "52": 17,
+                "79": 7,
+                "88": 2,
+                "172": 1,
+                "255": 29,
+                "262": 12,
+                "331": 13,
+                "584": 0,
+                "771": 2,
+                "810": 0,
+                "1075": 0,
+                "1153": 3677,
+                "1224": 0,
+                "1261": 4,
+                "1720": 53,
+                "1744": 214,
+                "1901": 22,
+                "1919": 1,
+                "2126": 2,
+                "2218": 9,
+                "2346": 3,
+                "2458": 0,
+                "2543": 5,
+                "2580": 15,
+                "2757": 4,
+                "3008": 17,
+                "3059": 1,
+                "3184": 0,
+                "3219": 0,
+                "3634": 0,
+                "3646": 2652,
+                "3675": 981,
+                "3932": 2,
+                "4695": 0,
+                "4813": 0,
+                "4821": 2,
+                "5192": 77,
+                "5356": 2,
+                "5411": 0,
+                "5466": 38,
+                "5526": 1597,
+                "5675": 2563,
+                "5806": 1,
+                "6091": 0,
+                "6101": 62,
+                "6628": 463,
+                "6745": 5,
+                "6777": 8,
+                "6910": 2,
+                "7105": 3,
+                "7154": 148,
+                "7162": 82,
+                "7353": 0
+            },
+            {
+                "557": 3482,
+                "724": 154,
+                "951": 454,
+                "3507": 1896,
+                "6186": 202,
+                "7178": 4747
+            }
+        ]
+    ],
+    "started": 24349,
+    "scoreMap": [
+        348,
+        432,
+        653,
+        808,
+        978,
+        1351,
+        1797,
+        2525,
+        3405,
+        4766
+    ],
+    "social": [
+        {
+            "url": "https:\/\/www.tiktok.com\/@thirdmanup\/video\/7265131614605249793?is_from_webapp=1&sender_device=pc&web_id=7251230371278505474",
+            "handle": "thirdmanup"
+        }
+    ]
+}

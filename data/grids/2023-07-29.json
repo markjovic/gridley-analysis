@@ -1,0 +1,270 @@
+{
+    "hItems": [
+        {
+            "id": "GW",
+            "title": "GWS Giants",
+            "subtitle": null,
+            "description": "Played at least 1 game for the GWS Giants, or currently on their list.",
+            "emoji": "\ud83d\udfe0",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        },
+        {
+            "id": "CW",
+            "title": "Collingwood",
+            "subtitle": null,
+            "description": "Played at least 1 game for the Collingwood Magpies, or currently on their list.",
+            "emoji": "\ud83e\udd67",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        },
+        {
+            "id": "coleman",
+            "title": "COLEMAN",
+            "subtitle": "MEDALIST",
+            "description": "Kicked the most goals in a home-and-away season. Includes \"Leading Goalkicker Medallists\" awarded prior to the first Coleman medal in 1955.",
+            "emoji": "\ud83c\udfc5",
+            "showOnLaunch": false,
+            "theme": null,
+            "type": null,
+            "imgUrl": null
+        }
+    ],
+    "vItems": [
+        {
+            "id": "SK",
+            "title": "St Kilda",
+            "subtitle": null,
+            "description": "Played at least 1 game for the St Kilda Saints, or currently on their list.",
+            "emoji": "\ud83d\ude07",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        },
+        {
+            "id": "ES",
+            "title": "Essendon",
+            "subtitle": null,
+            "description": "Played at least 1 game for the Essendon Bombers, or currently on their list.",
+            "emoji": "\ud83d\udee9\ufe0f",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        },
+        {
+            "id": "GE",
+            "title": "Geelong Cats",
+            "subtitle": null,
+            "description": "Played at least 1 game for the Geelong Cats, or currently on their list.",
+            "emoji": "\ud83d\udc31",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        }
+    ],
+    "level": 13,
+    "completed": 12427,
+    "correctGuesses": [
+        [
+            9975,
+            9479,
+            11359
+        ],
+        [
+            11406,
+            7052,
+            11425
+        ],
+        [
+            11624,
+            10958,
+            11993
+        ]
+    ],
+    "correctAnswersPlayerMap": [
+        [
+            {
+                "3571": 7107,
+                "4274": 2868
+            },
+            {
+                "255": 67,
+                "979": 0,
+                "1023": 1,
+                "1575": 1,
+                "1594": 0,
+                "1756": 149,
+                "2184": 3,
+                "2350": 29,
+                "2458": 2,
+                "2631": 2,
+                "2798": 0,
+                "3054": 1,
+                "3078": 0,
+                "3087": 0,
+                "3317": 0,
+                "3348": 0,
+                "3407": 0,
+                "3465": 0,
+                "3893": 0,
+                "4207": 0,
+                "4250": 136,
+                "4779": 9,
+                "4885": 6898,
+                "5008": 361,
+                "5219": 1,
+                "5430": 961,
+                "5756": 23,
+                "6101": 61,
+                "6494": 0,
+                "6605": 551,
+                "6749": 2,
+                "7019": 0,
+                "7057": 0,
+                "7166": 221
+            },
+            {
+                "848": 166,
+                "1413": 80,
+                "2512": 4859,
+                "5343": 1,
+                "7178": 6199,
+                "7437": 54
+            }
+        ],
+        [
+            {
+                "343": 664,
+                "2111": 2172,
+                "2269": 4395,
+                "3630": 368,
+                "3699": 593,
+                "4243": 353,
+                "4343": 1381,
+                "4565": 223,
+                "6623": 301,
+                "7425": 956
+            },
+            {
+                "249": 1,
+                "255": 10,
+                "355": 2503,
+                "430": 0,
+                "460": 1,
+                "487": 0,
+                "800": 0,
+                "908": 9,
+                "965": 1212,
+                "1121": 140,
+                "1461": 0,
+                "2004": 5,
+                "2109": 466,
+                "2322": 1,
+                "2365": 1,
+                "2406": 0,
+                "2458": 1,
+                "2567": 0,
+                "2673": 102,
+                "2896": 16,
+                "3267": 69,
+                "3912": 0,
+                "4223": 7,
+                "4934": 607,
+                "4985": 200,
+                "4991": 4,
+                "5306": 70,
+                "5600": 2,
+                "5808": 0,
+                "5834": 34,
+                "5954": 141,
+                "6101": 186,
+                "6120": 508,
+                "6153": 285,
+                "6195": 3,
+                "6266": 121,
+                "6529": 345,
+                "7102": 0,
+                "7163": 2
+            },
+            {
+                "148": 85,
+                "2549": 26,
+                "2982": 42,
+                "3500": 1,
+                "4096": 2081,
+                "5136": 8545,
+                "6283": 158,
+                "6529": 302,
+                "6883": 185
+            }
+        ],
+        [
+            {
+                "2028": 547,
+                "3831": 3265,
+                "4292": 644,
+                "6599": 946,
+                "6769": 1931,
+                "6849": 4291
+            },
+            {
+                "77": 0,
+                "1040": 0,
+                "1176": 206,
+                "1378": 279,
+                "1433": 4,
+                "1934": 0,
+                "2302": 2,
+                "2668": 20,
+                "2750": 1,
+                "3592": 0,
+                "4395": 0,
+                "4875": 1,
+                "5329": 34,
+                "5443": 829,
+                "5634": 5522,
+                "6010": 32,
+                "6923": 4,
+                "7087": 2,
+                "7142": 2,
+                "7204": 4020
+            },
+            {
+                "1602": 4,
+                "2244": 1357,
+                "2297": 56,
+                "2603": 3906,
+                "2760": 8,
+                "3831": 1778,
+                "4618": 242,
+                "4856": 13,
+                "4862": 5,
+                "5573": 48,
+                "5805": 16,
+                "6923": 9,
+                "7060": 4551
+            }
+        ]
+    ],
+    "started": 18243,
+    "scoreMap": [
+        106,
+        70,
+        123,
+        172,
+        272,
+        506,
+        936,
+        1718,
+        3537,
+        4987
+    ],
+    "social": null
+}

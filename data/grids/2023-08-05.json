@@ -1,0 +1,258 @@
+{
+    "hItems": [
+        {
+            "id": "WB",
+            "title": "Western Bulldogs",
+            "subtitle": null,
+            "description": "Played at least 1 game for the Western Bulldogs, or currently on their list. Includes players who played at least 1 game for Footscray.",
+            "emoji": "\ud83d\udc36",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        },
+        {
+            "id": "FR",
+            "title": "Fremantle",
+            "subtitle": null,
+            "description": "Played at least 1 game for the Fremantle Dockers, or currently on their list.",
+            "emoji": "\u2693",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        },
+        {
+            "id": "premcaptain",
+            "title": "PREMIERSHIP",
+            "subtitle": "CAPTAIN",
+            "description": "Won a premiership while captaining the team.",
+            "emoji": "\ud83e\udee1",
+            "showOnLaunch": false,
+            "theme": null,
+            "type": null,
+            "imgUrl": null
+        }
+    ],
+    "vItems": [
+        {
+            "id": "WC",
+            "title": "West Coast Eagles",
+            "subtitle": null,
+            "description": "Played at least 1 game for the West Coast Eagles, or currently on their list.",
+            "emoji": "\ud83e\udd85",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        },
+        {
+            "id": "ME",
+            "title": "Melbourne",
+            "subtitle": null,
+            "description": "Played at least 1 game for the Melbourne Demons, or currently on their list.",
+            "emoji": "\ud83d\udc79",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        },
+        {
+            "id": "disposals40",
+            "title": "40+ DISPOSALS",
+            "subtitle": "IN A GAME",
+            "description": "Collected 40 or more disposals in a single game (since 1965).",
+            "emoji": "\ud83c\udfc9",
+            "showOnLaunch": false,
+            "theme": null,
+            "type": null,
+            "imgUrl": null
+        }
+    ],
+    "level": 20,
+    "completed": 15533,
+    "correctGuesses": [
+        [
+            7098,
+            6361,
+            14128
+        ],
+        [
+            11899,
+            13230,
+            14168
+        ],
+        [
+            13123,
+            13768,
+            10397
+        ]
+    ],
+    "correctAnswersPlayerMap": [
+        [
+            {
+                "332": 740,
+                "3299": 601,
+                "4290": 4213,
+                "4560": 1100,
+                "5414": 283,
+                "6219": 161
+            },
+            {
+                "1146": 196,
+                "1151": 383,
+                "1155": 78,
+                "1744": 1061,
+                "1803": 576,
+                "1974": 219,
+                "2965": 237,
+                "3206": 1497,
+                "3735": 225,
+                "6551": 396,
+                "6715": 1165,
+                "7171": 153,
+                "7207": 175
+            },
+            {
+                "1523": 3408,
+                "4228": 3933,
+                "6493": 387,
+                "6616": 6400
+            }
+        ],
+        [
+            {
+                "53": 20,
+                "287": 243,
+                "838": 0,
+                "878": 0,
+                "1055": 2,
+                "1260": 61,
+                "1403": 2,
+                "1711": 97,
+                "1783": 1096,
+                "1940": 2,
+                "2035": 5,
+                "2317": 1,
+                "2443": 0,
+                "2493": 0,
+                "2590": 11,
+                "2725": 0,
+                "2975": 11,
+                "3228": 0,
+                "3366": 0,
+                "3671": 58,
+                "3676": 0,
+                "3709": 1,
+                "4147": 1,
+                "4193": 0,
+                "4302": 1647,
+                "4421": 201,
+                "4581": 4826,
+                "4754": 31,
+                "4886": 242,
+                "5393": 1688,
+                "5652": 1066,
+                "5816": 0,
+                "5874": 0,
+                "6694": 0,
+                "6716": 365,
+                "6746": 146,
+                "6869": 0,
+                "6959": 4,
+                "7161": 72
+            },
+            {
+                "1657": 1042,
+                "1692": 166,
+                "2279": 1910,
+                "3002": 433,
+                "3772": 70,
+                "3817": 1610,
+                "3830": 794,
+                "3843": 1356,
+                "4901": 5145,
+                "5648": 0,
+                "5959": 86,
+                "6526": 179,
+                "7248": 71,
+                "7255": 144,
+                "7312": 224
+            },
+            {
+                "267": 136,
+                "687": 21,
+                "2146": 82,
+                "2168": 99,
+                "2530": 0,
+                "4072": 138,
+                "5194": 10333,
+                "5568": 101,
+                "5820": 0,
+                "6268": 3258
+            }
+        ],
+        [
+            {
+                "44": 1194,
+                "528": 606,
+                "1231": 105,
+                "1260": 2,
+                "1328": 554,
+                "1333": 83,
+                "2015": 8,
+                "2224": 154,
+                "2611": 9,
+                "3249": 9,
+                "3481": 5676,
+                "3766": 390,
+                "4282": 640,
+                "4581": 254,
+                "5107": 598,
+                "5283": 1,
+                "5545": 4,
+                "5862": 31,
+                "6445": 276,
+                "6553": 2363,
+                "6640": 78,
+                "6735": 2,
+                "6954": 49,
+                "7183": 37
+            },
+            {
+                "302": 2168,
+                "1332": 0,
+                "1988": 1454,
+                "3636": 261,
+                "4583": 3081,
+                "5240": 1555,
+                "5421": 4197,
+                "5825": 1052
+            },
+            {
+                "550": 22,
+                "3734": 198,
+                "4056": 4583,
+                "4662": 384,
+                "4900": 1915,
+                "4968": 236,
+                "6493": 2551,
+                "7189": 508
+            }
+        ]
+    ],
+    "started": 21824,
+    "scoreMap": [
+        147,
+        151,
+        223,
+        411,
+        790,
+        1533,
+        2706,
+        3942,
+        2983,
+        2647
+    ],
+    "social": null
+}

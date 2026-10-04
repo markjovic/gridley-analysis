@@ -1,0 +1,265 @@
+{
+    "hItems": [
+        {
+            "id": "WC",
+            "title": "West Coast Eagles",
+            "subtitle": null,
+            "description": "Played at least 1 game for the West Coast Eagles, or currently on their list.",
+            "emoji": "\ud83e\udd85",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        },
+        {
+            "id": "CW",
+            "title": "Collingwood",
+            "subtitle": null,
+            "description": "Played at least 1 game for the Collingwood Magpies, or currently on their list.",
+            "emoji": "\ud83e\udd67",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        },
+        {
+            "id": "hof",
+            "title": "HALL OF FAME",
+            "subtitle": "PLAYER",
+            "description": "Inducted into the Australian Football Hall of Fame as a player.",
+            "emoji": "\ud83d\ude4c",
+            "showOnLaunch": false,
+            "theme": null,
+            "type": null,
+            "imgUrl": null
+        }
+    ],
+    "vItems": [
+        {
+            "id": "PA",
+            "title": "Port Adelaide",
+            "subtitle": null,
+            "description": "Played at least 1 game for Port Adelaide Power in the AFL (1997 onwards), or currently on their list.",
+            "emoji": "\u26a1",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        },
+        {
+            "id": "CA",
+            "title": "Carlton",
+            "subtitle": null,
+            "description": "Played at least 1 game for the Carlton Blues, or currently on their list.",
+            "emoji": "\ud83d\udd35",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        },
+        {
+            "id": "coleman",
+            "title": "COLEMAN",
+            "subtitle": "MEDALIST",
+            "description": "Kicked the most goals in a home-and-away season. Includes \"Leading Goalkicker Medallists\" awarded prior to the first Coleman medal in 1955.",
+            "emoji": "\ud83c\udfc5",
+            "showOnLaunch": false,
+            "theme": null,
+            "type": null,
+            "imgUrl": null
+        }
+    ],
+    "level": 21,
+    "completed": 15823,
+    "correctGuesses": [
+        [
+            12639,
+            7810,
+            10652
+        ],
+        [
+            13171,
+            11474,
+            13953
+        ],
+        [
+            13475,
+            10374,
+            13381
+        ]
+    ],
+    "correctAnswersPlayerMap": [
+        [
+            {
+                "1092": 1873,
+                "1138": 132,
+                "1150": 462,
+                "3248": 168,
+                "3735": 671,
+                "3787": 57,
+                "4321": 4672,
+                "4828": 118,
+                "6529": 390,
+                "6538": 4002,
+                "6579": 94
+            },
+            {
+                "929": 3793,
+                "1352": 444,
+                "4162": 3033,
+                "4296": 160,
+                "6529": 380
+            },
+            {
+                "2640": 4998,
+                "7369": 5654
+            }
+        ],
+        [
+            {
+                "1336": 373,
+                "1523": 4241,
+                "4295": 2631,
+                "5076": 500,
+                "6497": 5426
+            },
+            {
+                "186": 1167,
+                "537": 0,
+                "565": 113,
+                "700": 0,
+                "748": 0,
+                "953": 1,
+                "977": 0,
+                "1352": 665,
+                "1370": 210,
+                "1504": 188,
+                "1709": 39,
+                "1747": 5329,
+                "2062": 0,
+                "2302": 0,
+                "2564": 0,
+                "2648": 0,
+                "2717": 0,
+                "3023": 16,
+                "3051": 12,
+                "3087": 0,
+                "3096": 0,
+                "3111": 10,
+                "3141": 1608,
+                "3147": 0,
+                "3170": 0,
+                "3472": 13,
+                "3870": 20,
+                "3948": 0,
+                "4267": 450,
+                "4423": 0,
+                "4497": 0,
+                "4749": 88,
+                "4779": 2,
+                "5354": 830,
+                "5600": 3,
+                "5899": 382,
+                "6010": 69,
+                "6112": 0,
+                "6311": 0,
+                "6426": 20,
+                "7032": 129,
+                "7214": 103,
+                "7352": 7
+            },
+            {
+                "190": 1802,
+                "398": 1165,
+                "1285": 1437,
+                "1523": 2037,
+                "1705": 790,
+                "2347": 9,
+                "2676": 48,
+                "2988": 1498,
+                "3116": 87,
+                "3186": 43,
+                "4174": 779,
+                "4448": 41,
+                "4453": 42,
+                "5369": 101,
+                "5824": 59,
+                "5899": 27,
+                "6216": 86,
+                "6238": 33,
+                "6268": 298,
+                "6732": 1091,
+                "6755": 2310,
+                "7388": 170
+            }
+        ],
+        [
+            {
+                "2512": 829,
+                "4295": 9742,
+                "6529": 2904
+            },
+            {
+                "420": 61,
+                "1254": 5371,
+                "1470": 9,
+                "2096": 76,
+                "2130": 297,
+                "2855": 2755,
+                "3240": 183,
+                "5899": 1228,
+                "6327": 52,
+                "6529": 334,
+                "6923": 8
+            },
+            {
+                "4421": 0,
+                "148": 8,
+                "672": 160,
+                "848": 17,
+                "1044": 60,
+                "1470": 4,
+                "1991": 111,
+                "2096": 1,
+                "2130": 66,
+                "2244": 316,
+                "2603": 1082,
+                "2760": 1,
+                "2855": 476,
+                "3116": 18,
+                "3186": 5,
+                "3500": 1,
+                "3583": 79,
+                "3761": 2715,
+                "4096": 1092,
+                "4242": 325,
+                "4662": 356,
+                "4937": 201,
+                "5136": 1102,
+                "5878": 569,
+                "5899": 91,
+                "6327": 6,
+                "7178": 4519
+            }
+        ]
+    ],
+    "started": 23038,
+    "scoreMap": [
+        222,
+        215,
+        300,
+        496,
+        806,
+        1401,
+        2333,
+        3240,
+        3571,
+        3239
+    ],
+    "social": [
+        {
+            "url": "https:\/\/www.tiktok.com\/@thirdmanup\/video\/7264025360331754754?is_from_webapp=1&sender_device=pc&web_id=7251230371278505474",
+            "handle": "thirdmanup"
+        }
+    ]
+}

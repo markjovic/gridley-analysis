@@ -1,0 +1,253 @@
+{
+    "hItems": [
+        {
+            "id": "WB",
+            "title": "Western Bulldogs",
+            "subtitle": null,
+            "description": "Played at least 1 game for the Western Bulldogs, or currently on their list. Includes players who played at least 1 game for Footscray.",
+            "emoji": "\ud83d\udc36",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        },
+        {
+            "id": "SY",
+            "title": "Sydney Swans",
+            "subtitle": null,
+            "description": "Played at least 1 game for the Sydney Swans, or currently on their list. Includes players who played at least 1 game for South Melbourne.",
+            "emoji": "\ud83e\udda2",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        },
+        {
+            "id": "brownlow",
+            "title": "BROWNLOW",
+            "subtitle": "MEDALIST",
+            "description": "Player has won a Brownlow Medal. Excludes players who had the most votes but ruled ineligible. ",
+            "emoji": "\ud83c\udfc5",
+            "showOnLaunch": false,
+            "theme": null,
+            "type": null,
+            "imgUrl": null
+        }
+    ],
+    "vItems": [
+        {
+            "id": "ES",
+            "title": "Essendon",
+            "subtitle": null,
+            "description": "Played at least 1 game for the Essendon Bombers, or currently on their list.",
+            "emoji": "\ud83d\udee9\ufe0f",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        },
+        {
+            "id": "PA",
+            "title": "Port Adelaide",
+            "subtitle": null,
+            "description": "Played at least 1 game for Port Adelaide Power in the AFL (1997 onwards), or currently on their list.",
+            "emoji": "\u26a1",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        },
+        {
+            "id": "bears",
+            "title": "BRISBANE",
+            "subtitle": "BEARS",
+            "description": "Played at least 1 game for the Brisbane Bears (1987-1996).",
+            "emoji": "\ud83d\udc28",
+            "showOnLaunch": true,
+            "theme": null,
+            "type": null,
+            "imgUrl": null
+        }
+    ],
+    "level": 22,
+    "completed": 15026,
+    "correctGuesses": [
+        [
+            12992,
+            12027,
+            13592
+        ],
+        [
+            9114,
+            12597,
+            14051
+        ],
+        [
+            8802,
+            8624,
+            12223
+        ]
+    ],
+    "correctAnswersPlayerMap": [
+        [
+            {
+                "24": 2107,
+                "125": 222,
+                "1002": 1,
+                "1290": 1,
+                "1300": 2,
+                "1495": 1,
+                "1627": 1,
+                "1639": 13,
+                "1919": 0,
+                "2119": 0,
+                "3066": 2,
+                "3271": 23,
+                "3299": 135,
+                "3373": 0,
+                "3514": 1,
+                "3591": 0,
+                "3659": 6337,
+                "3912": 3,
+                "4810": 2,
+                "4821": 2,
+                "4959": 530,
+                "5074": 1,
+                "5192": 16,
+                "5876": 4,
+                "6801": 3388,
+                "7150": 0,
+                "7158": 171,
+                "7225": 3,
+                "7333": 6,
+                "7382": 15,
+                "7430": 5
+            },
+            {
+                "7": 6506,
+                "155": 0,
+                "301": 77,
+                "391": 449,
+                "604": 115,
+                "780": 0,
+                "817": 0,
+                "1306": 3,
+                "1446": 4,
+                "1458": 0,
+                "1579": 1,
+                "1702": 698,
+                "1720": 10,
+                "2083": 621,
+                "2183": 0,
+                "2277": 38,
+                "2868": 3,
+                "3197": 0,
+                "3226": 0,
+                "3269": 0,
+                "3378": 2,
+                "3871": 0,
+                "4011": 0,
+                "4798": 0,
+                "4816": 0,
+                "4984": 61,
+                "5164": 0,
+                "5239": 365,
+                "5252": 3,
+                "5327": 33,
+                "5358": 0,
+                "5490": 90,
+                "5600": 3,
+                "5790": 3,
+                "5863": 142,
+                "5896": 1,
+                "6054": 0,
+                "6320": 0,
+                "6452": 159,
+                "6682": 1,
+                "6799": 47,
+                "6909": 2409,
+                "6934": 183,
+                "7144": 0,
+                "7353": 0
+            },
+            {
+                "24": 1413,
+                "808": 614,
+                "2140": 1530,
+                "2640": 2695,
+                "2934": 626,
+                "3678": 6714
+            }
+        ],
+        [
+            {
+                "34": 225,
+                "1197": 1946,
+                "3621": 3505,
+                "4270": 0,
+                "4296": 256,
+                "5436": 2572,
+                "5531": 344,
+                "6523": 266
+            },
+            {
+                "26": 884,
+                "244": 7309,
+                "1374": 172,
+                "5888": 3094,
+                "6480": 1072,
+                "6661": 66
+            },
+            {
+                "2640": 4549,
+                "5640": 9502
+            }
+        ],
+        [
+            {
+                "353": 60,
+                "1098": 1369,
+                "3751": 5970,
+                "3875": 350,
+                "5283": 660,
+                "6237": 95,
+                "6612": 46,
+                "7205": 252
+            },
+            {
+                "1160": 34,
+                "1721": 66,
+                "1780": 2303,
+                "2154": 173,
+                "3715": 116,
+                "3875": 50,
+                "4136": 112,
+                "5022": 160,
+                "5100": 39,
+                "5154": 34,
+                "6612": 17,
+                "7370": 5520
+            },
+            {
+                "1098": 1040,
+                "3751": 1063,
+                "5325": 6163,
+                "5431": 3957
+            }
+        ]
+    ],
+    "started": 21397,
+    "scoreMap": [
+        277,
+        279,
+        411,
+        532,
+        783,
+        1133,
+        1564,
+        2191,
+        2896,
+        4960
+    ],
+    "social": null
+}

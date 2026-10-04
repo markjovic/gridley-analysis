@@ -1,0 +1,268 @@
+{
+    "hItems": [
+        {
+            "id": "GE",
+            "title": "Geelong Cats",
+            "subtitle": null,
+            "description": "Played at least 1 game for the Geelong Cats, or currently on their list.",
+            "emoji": "\ud83d\udc31",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        },
+        {
+            "id": "AD",
+            "title": "Adelaide Crows",
+            "subtitle": null,
+            "description": "Played at least 1 game for the Adelaide Crows, or currently on their list.",
+            "emoji": "\ud83d\udc26\u200d\u2b1b",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        },
+        {
+            "id": "risingStar",
+            "title": "RISING STAR",
+            "subtitle": "WINNER",
+            "description": null,
+            "emoji": "\ud83c\udfc5",
+            "showOnLaunch": false,
+            "theme": null,
+            "type": null,
+            "imgUrl": null
+        }
+    ],
+    "vItems": [
+        {
+            "id": "ME",
+            "title": "Melbourne",
+            "subtitle": null,
+            "description": "Played at least 1 game for the Melbourne Demons, or currently on their list.",
+            "emoji": "\ud83d\udc79",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        },
+        {
+            "id": "BL",
+            "title": "Brisbane Lions",
+            "subtitle": null,
+            "description": "Played at least 1 game for the Brisbane Lions, or currently on their list. Includes Brisbane Bears and Fitzroy Lions players.",
+            "emoji": "\ud83e\udd81",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        },
+        {
+            "id": "hof",
+            "title": "HALL OF FAME",
+            "subtitle": "PLAYER",
+            "description": "Inducted into the Australian Football Hall of Fame as a player.",
+            "emoji": "\ud83d\ude4c",
+            "showOnLaunch": false,
+            "theme": null,
+            "type": null,
+            "imgUrl": null
+        }
+    ],
+    "level": 28,
+    "completed": 12911,
+    "correctGuesses": [
+        [
+            7258,
+            9399,
+            7202
+        ],
+        [
+            9207,
+            9401,
+            8368
+        ],
+        [
+            11592,
+            10474,
+            5719
+        ]
+    ],
+    "correctAnswersPlayerMap": [
+        [
+            {
+                "1161": 244,
+                "1168": 1336,
+                "1177": 15,
+                "1412": 2,
+                "1606": 727,
+                "1618": 4,
+                "2337": 0,
+                "2410": 1,
+                "2457": 0,
+                "2737": 1,
+                "2758": 1,
+                "3039": 0,
+                "3097": 1,
+                "3296": 0,
+                "3307": 0,
+                "3597": 2,
+                "3731": 1201,
+                "4701": 0,
+                "4997": 419,
+                "5382": 214,
+                "5384": 1721,
+                "5548": 30,
+                "5796": 0,
+                "5817": 0,
+                "5879": 23,
+                "6458": 288,
+                "6611": 934,
+                "6946": 1,
+                "7052": 74,
+                "7233": 19
+            },
+            {
+                "67": 57,
+                "396": 181,
+                "676": 3035,
+                "1585": 59,
+                "1826": 50,
+                "3650": 3784,
+                "3697": 116,
+                "4168": 125,
+                "4569": 384,
+                "5113": 45,
+                "5535": 33,
+                "5938": 382,
+                "6548": 1061,
+                "6593": 0,
+                "7218": 87
+            },
+            {
+                "1323": 586,
+                "3731": 2077,
+                "3843": 2546,
+                "4901": 1993
+            }
+        ],
+        [
+            {
+                "57": 132,
+                "285": 1798,
+                "300": 276,
+                "377": 0,
+                "1030": 0,
+                "1168": 221,
+                "1598": 0,
+                "1712": 3,
+                "1751": 56,
+                "1839": 834,
+                "1893": 0,
+                "1950": 26,
+                "1995": 13,
+                "2216": 0,
+                "2598": 0,
+                "2635": 0,
+                "3110": 0,
+                "3414": 0,
+                "3725": 0,
+                "4308": 284,
+                "4451": 0,
+                "4522": 0,
+                "4580": 643,
+                "4701": 0,
+                "4797": 0,
+                "4845": 2740,
+                "5052": 1,
+                "5057": 29,
+                "5384": 454,
+                "5419": 1207,
+                "5919": 0,
+                "5994": 0,
+                "6522": 47,
+                "6587": 33,
+                "6771": 50,
+                "7221": 328,
+                "7238": 32
+            },
+            {
+                "615": 223,
+                "621": 1264,
+                "1345": 678,
+                "1418": 3163,
+                "1545": 14,
+                "3423": 1217,
+                "3746": 1449,
+                "5013": 204,
+                "5057": 22,
+                "5112": 383,
+                "5286": 26,
+                "5394": 758,
+                "5843": 0,
+                "7043": 0
+            },
+            {
+                "1546": 1075,
+                "1808": 2818,
+                "4829": 3033,
+                "5431": 1442
+            }
+        ],
+        [
+            {
+                "674": 37,
+                "790": 58,
+                "994": 249,
+                "1244": 15,
+                "1689": 816,
+                "2064": 4,
+                "2244": 538,
+                "2304": 261,
+                "2536": 17,
+                "2596": 218,
+                "2603": 4709,
+                "2760": 2,
+                "2788": 10,
+                "2922": 1826,
+                "2988": 86,
+                "3161": 9,
+                "3274": 83,
+                "3974": 1241,
+                "5155": 549,
+                "5841": 58,
+                "6087": 87,
+                "6496": 710,
+                "7048": 9
+            },
+            {
+                "336": 3353,
+                "610": 441,
+                "1537": 0,
+                "1869": 795,
+                "4968": 705,
+                "5020": 3911,
+                "6654": 430,
+                "7377": 839
+            },
+            {
+                "5431": 4492,
+                "6493": 1227
+            }
+        ]
+    ],
+    "started": 19173,
+    "scoreMap": [
+        377,
+        547,
+        639,
+        709,
+        885,
+        1265,
+        1685,
+        2115,
+        2313,
+        2376
+    ],
+    "social": null
+}

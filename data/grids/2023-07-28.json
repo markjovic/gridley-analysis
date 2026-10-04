@@ -1,0 +1,277 @@
+{
+    "hItems": [
+        {
+            "id": "CA",
+            "title": "Carlton",
+            "subtitle": null,
+            "description": "Played at least 1 game for the Carlton Blues, or currently on their list.",
+            "emoji": "\ud83d\udd35",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        },
+        {
+            "id": "SY",
+            "title": "Sydney Swans",
+            "subtitle": null,
+            "description": "Played at least 1 game for the Sydney Swans, or currently on their list. Includes players who played at least 1 game for South Melbourne.",
+            "emoji": "\ud83e\udda2",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        },
+        {
+            "id": "goty",
+            "title": "GOAL OF THE YEAR",
+            "subtitle": null,
+            "description": "Has won the Goal of the Year award (since 1976).",
+            "emoji": "\ud83c\udfc5",
+            "showOnLaunch": false,
+            "theme": null,
+            "type": null,
+            "imgUrl": "\/img\/awards\/goty-2.png"
+        }
+    ],
+    "vItems": [
+        {
+            "id": "AD",
+            "title": "Adelaide Crows",
+            "subtitle": null,
+            "description": "Played at least 1 game for the Adelaide Crows, or currently on their list.",
+            "emoji": "\ud83d\udc26\u200d\u2b1b",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        },
+        {
+            "id": "WB",
+            "title": "Western Bulldogs",
+            "subtitle": null,
+            "description": "Played at least 1 game for the Western Bulldogs, or currently on their list. Includes players who played at least 1 game for Footscray.",
+            "emoji": "\ud83d\udc36",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        },
+        {
+            "id": "norm",
+            "title": "NORM SMITH",
+            "subtitle": "MEDALIST",
+            "description": "Player judged best on ground in the Grand Final. First awarded in 1979.",
+            "emoji": "\ud83c\udfc5",
+            "showOnLaunch": false,
+            "theme": null,
+            "type": null,
+            "imgUrl": null
+        }
+    ],
+    "level": 12,
+    "completed": 16480,
+    "correctGuesses": [
+        [
+            14780,
+            14004,
+            14845
+        ],
+        [
+            13230,
+            11146,
+            7670
+        ],
+        [
+            12512,
+            11520,
+            9975
+        ]
+    ],
+    "correctAnswersPlayerMap": [
+        [
+            {
+                "315": 236,
+                "636": 86,
+                "1319": 4326,
+                "1964": 40,
+                "2284": 2671,
+                "4562": 396,
+                "5162": 484,
+                "5398": 2533,
+                "5937": 32,
+                "6484": 1625,
+                "6486": 1052,
+                "7241": 568,
+                "7251": 731
+            },
+            {
+                "4257": 5501,
+                "4566": 4649,
+                "4824": 149,
+                "5056": 1341,
+                "5843": 196,
+                "6442": 1596,
+                "6545": 57,
+                "6824": 38,
+                "7155": 477
+            },
+            {
+                "2284": 11135,
+                "7184": 3710
+            }
+        ],
+        [
+            {
+                "58": 13,
+                "298": 576,
+                "609": 40,
+                "645": 36,
+                "671": 0,
+                "715": 1,
+                "1078": 5,
+                "1303": 28,
+                "1411": 17,
+                "2074": 19,
+                "2302": 4,
+                "2415": 0,
+                "2433": 2,
+                "2505": 0,
+                "2719": 0,
+                "2772": 0,
+                "2853": 0,
+                "2986": 8,
+                "3285": 3,
+                "3671": 118,
+                "3780": 704,
+                "3937": 108,
+                "4194": 0,
+                "4447": 4,
+                "4830": 2933,
+                "4835": 7516,
+                "4962": 35,
+                "4963": 205,
+                "5036": 4,
+                "5123": 71,
+                "5215": 2,
+                "5616": 2,
+                "5673": 64,
+                "5965": 58,
+                "6169": 27,
+                "6659": 176,
+                "7068": 2,
+                "7095": 2,
+                "7417": 447
+            },
+            {
+                "129": 18,
+                "212": 0,
+                "298": 593,
+                "432": 0,
+                "557": 5083,
+                "574": 187,
+                "657": 123,
+                "788": 0,
+                "844": 0,
+                "1411": 1,
+                "1436": 1,
+                "2116": 0,
+                "2233": 0,
+                "2276": 69,
+                "2590": 2,
+                "2609": 1,
+                "2719": 0,
+                "2830": 20,
+                "2888": 5,
+                "3095": 1,
+                "3217": 0,
+                "3421": 0,
+                "3875": 9,
+                "4008": 0,
+                "4051": 0,
+                "4193": 1,
+                "4533": 0,
+                "4854": 9,
+                "4962": 9,
+                "5001": 3,
+                "5235": 0,
+                "5319": 691,
+                "5471": 124,
+                "5523": 0,
+                "5676": 0,
+                "5711": 1215,
+                "5904": 8,
+                "6009": 0,
+                "6097": 0,
+                "6132": 134,
+                "6199": 4,
+                "6314": 0,
+                "6324": 0,
+                "6358": 0,
+                "6384": 0,
+                "6577": 2396,
+                "6612": 4,
+                "6652": 139,
+                "6659": 257,
+                "6768": 5,
+                "6818": 8,
+                "6824": 25,
+                "7291": 1
+            },
+            {
+                "3751": 4090,
+                "4559": 3553,
+                "5962": 27
+            }
+        ],
+        [
+            {
+                "1285": 1371,
+                "1523": 2972,
+                "2002": 1265,
+                "2988": 5535,
+                "7384": 1369
+            },
+            {
+                "2002": 99,
+                "2988": 287,
+                "6453": 10868,
+                "6615": 266
+            },
+            {
+                "1523": 1923,
+                "1740": 6566,
+                "2603": 964,
+                "5278": 522,
+                "7412": 0
+            }
+        ]
+    ],
+    "started": 24341,
+    "scoreMap": [
+        164,
+        399,
+        468,
+        704,
+        1128,
+        1612,
+        2019,
+        2572,
+        3181,
+        4233
+    ],
+    "social": [
+        {
+            "url": "https:\/\/www.tiktok.com\/@andy_munro_\/video\/7260484356706143494?is_from_webapp=1&sender_device=pc&web_id=7251230371278505474",
+            "handle": "andy_munro_"
+        },
+        {
+            "url": "https:\/\/www.tiktok.com\/@bood_designs\/video\/7260712251521240326?is_from_webapp=1&sender_device=pc&web_id=7251230371278505474",
+            "handle": "bood_designs"
+        },
+        {
+            "url": "https:\/\/www.tiktok.com\/@thirdmanup\/video\/7260730128525774086?is_from_webapp=1&sender_device=pc&web_id=7251230371278505474",
+            "handle": "thirdmanup"
+        }
+    ]
+}

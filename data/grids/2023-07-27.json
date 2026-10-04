@@ -1,0 +1,300 @@
+{
+    "hItems": [
+        {
+            "id": "CA",
+            "title": "Carlton",
+            "subtitle": null,
+            "description": "Played at least 1 game for the Carlton Blues, or currently on their list.",
+            "emoji": "\ud83d\udd35",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        },
+        {
+            "id": "GC",
+            "title": "Gold Coast Suns",
+            "subtitle": null,
+            "description": "Played at least 1 game for the Gold Coast Suns, or currently on their list.",
+            "emoji": "\u2600\ufe0f",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        },
+        {
+            "id": "WC",
+            "title": "West Coast Eagles",
+            "subtitle": null,
+            "description": "Played at least 1 game for the West Coast Eagles, or currently on their list.",
+            "emoji": "\ud83e\udd85",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        }
+    ],
+    "vItems": [
+        {
+            "id": "KA",
+            "title": "North Melbourne",
+            "subtitle": null,
+            "description": "Played at least 1 game for the North Melbourne Kangaroos, or currently on their list.",
+            "emoji": "\ud83e\udd98",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        },
+        {
+            "id": "HW",
+            "title": "Hawthorn",
+            "subtitle": null,
+            "description": "Played at least 1 game for the Hawthorn Hawks, or currently on their list.",
+            "emoji": "\ud83d\udfe4",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        },
+        {
+            "id": "RI",
+            "title": "Richmond",
+            "subtitle": null,
+            "description": "Played at least 1 game for the Richmond Tigers, or currently on their list.",
+            "emoji": "\ud83d\udc2f",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        }
+    ],
+    "level": 11,
+    "completed": 14861,
+    "correctGuesses": [
+        [
+            11508,
+            12154,
+            12000
+        ],
+        [
+            10215,
+            12419,
+            13029
+        ],
+        [
+            10213,
+            14179,
+            11562
+        ]
+    ],
+    "correctAnswersPlayerMap": [
+        [
+            {
+                "14": 748,
+                "58": 8,
+                "222": 0,
+                "813": 0,
+                "847": 1,
+                "1158": 113,
+                "1691": 1292,
+                "1709": 3,
+                "1881": 0,
+                "1933": 1,
+                "2014": 402,
+                "2077": 1,
+                "2149": 629,
+                "2699": 5,
+                "2762": 0,
+                "2785": 2,
+                "3501": 0,
+                "3610": 1,
+                "3736": 5774,
+                "4715": 0,
+                "4750": 1,
+                "4853": 45,
+                "4961": 140,
+                "5019": 162,
+                "5260": 6,
+                "5352": 1658,
+                "6024": 4,
+                "6123": 30,
+                "6278": 0,
+                "6471": 471,
+                "6718": 3,
+                "6725": 4,
+                "6763": 1,
+                "7191": 3,
+                "7453": 0
+            },
+            {
+                "8": 4075,
+                "1784": 353,
+                "1790": 1867,
+                "3211": 5656,
+                "3484": 0,
+                "3806": 0,
+                "4059": 100,
+                "6859": 103
+            },
+            {
+                "5": 341,
+                "189": 134,
+                "632": 394,
+                "1392": 193,
+                "1797": 171,
+                "2045": 892,
+                "2056": 328,
+                "2249": 8600,
+                "4369": 108,
+                "4994": 121,
+                "6344": 690,
+                "7217": 28
+            }
+        ],
+        [
+            {
+                "152": 5,
+                "1192": 219,
+                "1305": 0,
+                "1788": 1330,
+                "2115": 2,
+                "2164": 1,
+                "2370": 2,
+                "2477": 37,
+                "2699": 26,
+                "2822": 96,
+                "3017": 0,
+                "3169": 0,
+                "3185": 2,
+                "3419": 2,
+                "3881": 9,
+                "4406": 3,
+                "4452": 65,
+                "4521": 156,
+                "4779": 5,
+                "4945": 5477,
+                "5589": 5,
+                "5693": 5,
+                "6152": 500,
+                "6184": 124,
+                "6272": 17,
+                "6642": 1967,
+                "6659": 160,
+                "7028": 0
+            },
+            {
+                "1372": 4550,
+                "3555": 2087,
+                "3636": 4825,
+                "3806": 0,
+                "4372": 163,
+                "4927": 0,
+                "5392": 583,
+                "7096": 211
+            },
+            {
+                "380": 116,
+                "1146": 103,
+                "1781": 1916,
+                "5156": 744,
+                "5251": 85,
+                "5739": 29,
+                "5748": 90,
+                "6134": 131,
+                "6493": 8204,
+                "6736": 167,
+                "7261": 0,
+                "7446": 1444
+            }
+        ],
+        [
+            {
+                "192": 4,
+                "307": 996,
+                "371": 0,
+                "609": 78,
+                "683": 0,
+                "739": 52,
+                "1341": 163,
+                "1411": 0,
+                "1485": 0,
+                "1503": 88,
+                "1649": 0,
+                "1973": 18,
+                "2074": 13,
+                "2354": 0,
+                "2475": 0,
+                "2488": 3,
+                "2908": 5,
+                "3257": 20,
+                "3342": 1,
+                "4333": 305,
+                "4399": 0,
+                "4749": 3,
+                "5814": 0,
+                "5866": 11,
+                "6051": 0,
+                "6150": 43,
+                "6624": 6209,
+                "6625": 2078,
+                "6650": 57,
+                "6990": 66
+            },
+            {
+                "346": 150,
+                "403": 831,
+                "1128": 4087,
+                "1688": 488,
+                "2153": 1446,
+                "3630": 845,
+                "4275": 929,
+                "4927": 1885,
+                "5187": 346,
+                "5630": 1415,
+                "7078": 1757
+            },
+            {
+                "5": 295,
+                "495": 48,
+                "598": 6673,
+                "1097": 10,
+                "1697": 94,
+                "3835": 57,
+                "4062": 131,
+                "5012": 579,
+                "5399": 513,
+                "5709": 2499,
+                "5948": 265,
+                "6125": 38,
+                "6221": 75,
+                "6761": 50,
+                "7005": 40,
+                "7217": 195
+            }
+        ]
+    ],
+    "started": 21935,
+    "scoreMap": [
+        315,
+        295,
+        319,
+        420,
+        578,
+        763,
+        1123,
+        1844,
+        3523,
+        5681
+    ],
+    "social": [
+        {
+            "url": "https:\/\/www.tiktok.com\/@thirdmanup\/video\/7260358406106598661?is_from_webapp=1&sender_device=pc&web_id=7251230371278505474",
+            "handle": "thirdmanup"
+        },
+        {
+            "url": "https:\/\/www.tiktok.com\/@bood_designs\/video\/7260329313730432262?is_from_webapp=1&sender_device=pc&web_id=7251230371278505474",
+            "handle": "bood_designs"
+        }
+    ]
+}

@@ -1,0 +1,254 @@
+{
+    "hItems": [
+        {
+            "id": "BL",
+            "title": "Brisbane Lions",
+            "subtitle": null,
+            "description": "Played at least 1 game for the Brisbane Lions, or currently on their list. Includes Brisbane Bears and Fitzroy Lions players.",
+            "emoji": "\ud83e\udd81",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        },
+        {
+            "id": "CW",
+            "title": "Collingwood",
+            "subtitle": null,
+            "description": "Played at least 1 game for the Collingwood Magpies, or currently on their list.",
+            "emoji": "\ud83e\udd67",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        },
+        {
+            "id": "risingStar",
+            "title": "RISING STAR",
+            "subtitle": "WINNER",
+            "description": null,
+            "emoji": "\ud83c\udfc5",
+            "showOnLaunch": false,
+            "theme": null,
+            "type": null,
+            "imgUrl": null
+        }
+    ],
+    "vItems": [
+        {
+            "id": "HW",
+            "title": "Hawthorn",
+            "subtitle": null,
+            "description": "Played at least 1 game for the Hawthorn Hawks, or currently on their list.",
+            "emoji": "\ud83d\udfe4",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        },
+        {
+            "id": "FR",
+            "title": "Fremantle",
+            "subtitle": null,
+            "description": "Played at least 1 game for the Fremantle Dockers, or currently on their list.",
+            "emoji": "\u2693",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        },
+        {
+            "id": "pick1",
+            "title": "PICK 1",
+            "subtitle": "NATIONAL DRAFT",
+            "description": "Player was Pick 1 in the National Draft. Includes drafts from 1981 to present",
+            "emoji": "1\ufe0f\u20e3",
+            "showOnLaunch": false,
+            "theme": null,
+            "type": null,
+            "imgUrl": null
+        }
+    ],
+    "level": 9,
+    "completed": 14790,
+    "correctGuesses": [
+        [
+            14003,
+            13188,
+            9165
+        ],
+        [
+            12492,
+            12116,
+            11096
+        ],
+        [
+            11056,
+            7436,
+            10267
+        ]
+    ],
+    "correctAnswersPlayerMap": [
+        [
+            {
+                "216": 0,
+                "228": 0,
+                "232": 0,
+                "318": 44,
+                "686": 0,
+                "986": 0,
+                "1107": 400,
+                "1265": 11,
+                "1305": 0,
+                "1871": 0,
+                "2428": 0,
+                "2806": 0,
+                "2946": 2991,
+                "2947": 0,
+                "3074": 0,
+                "3423": 5085,
+                "3777": 0,
+                "4068": 34,
+                "4262": 58,
+                "4386": 0,
+                "4455": 0,
+                "4779": 0,
+                "4900": 4989,
+                "4977": 0,
+                "5023": 0,
+                "5106": 0,
+                "5117": 0,
+                "5281": 0,
+                "5434": 36,
+                "5589": 0,
+                "5598": 0,
+                "5713": 0,
+                "5851": 0,
+                "6108": 355,
+                "6181": 0,
+                "6198": 0,
+                "6235": 0,
+                "6248": 0,
+                "6633": 0,
+                "7193": 0,
+                "7303": 0,
+                "7323": 0,
+                "7468": 0
+            },
+            {
+                "198": 56,
+                "765": 0,
+                "800": 0,
+                "881": 0,
+                "905": 0,
+                "970": 49,
+                "1576": 0,
+                "1596": 0,
+                "1610": 1009,
+                "1771": 0,
+                "1929": 0,
+                "2089": 1192,
+                "2356": 0,
+                "2406": 0,
+                "2408": 0,
+                "2518": 0,
+                "2706": 0,
+                "2836": 2,
+                "3003": 1,
+                "3239": 2,
+                "3350": 0,
+                "3410": 0,
+                "3455": 0,
+                "3777": 9,
+                "3893": 0,
+                "4125": 0,
+                "4239": 43,
+                "4505": 0,
+                "4526": 2,
+                "4779": 1,
+                "5210": 1086,
+                "5457": 0,
+                "6528": 30,
+                "6614": 24,
+                "6687": 0,
+                "7092": 7710,
+                "7101": 1907,
+                "7193": 65,
+                "7303": 0
+            },
+            {
+                "3636": 1779,
+                "5527": 1389,
+                "6493": 5997
+            }
+        ],
+        [
+            {
+                "57": 377,
+                "1106": 0,
+                "1155": 0,
+                "1744": 0,
+                "2098": 1258,
+                "3664": 2096,
+                "4136": 0,
+                "4583": 8761
+            },
+            {
+                "1106": 24,
+                "1269": 174,
+                "1536": 3873,
+                "1551": 1578,
+                "3664": 4243,
+                "3670": 470,
+                "4063": 566,
+                "4585": 0,
+                "4656": 116,
+                "5753": 1072
+            },
+            {
+                "1332": 5194,
+                "1835": 419,
+                "3636": 277,
+                "3843": 385,
+                "4901": 1529,
+                "5741": 900,
+                "6117": 2392
+            }
+        ],
+        [
+            {
+                "1349": 8431,
+                "2098": 1491,
+                "4136": 0,
+                "4900": 917,
+                "5055": 0,
+                "7201": 217
+            },
+            {
+                "198": 187,
+                "4285": 7249
+            },
+            {
+                "334": 1944,
+                "1186": 895,
+                "3636": 0,
+                "5537": 1803,
+                "6512": 5625
+            }
+        ]
+    ],
+    "started": 20928,
+    "scoreMap": [
+        161,
+        190,
+        268,
+        517,
+        875,
+        1468,
+        2015,
+        2513,
+        3026,
+        3757
+    ],
+    "social": null
+}

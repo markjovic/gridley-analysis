@@ -1,0 +1,234 @@
+{
+    "hItems": [
+        {
+            "id": "FR",
+            "title": "Fremantle",
+            "subtitle": null,
+            "description": "Played at least 1 game for the Fremantle Dockers, or currently on their list.",
+            "emoji": "\u2693",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        },
+        {
+            "id": "HW",
+            "title": "Hawthorn",
+            "subtitle": null,
+            "description": "Played at least 1 game for the Hawthorn Hawks, or currently on their list.",
+            "emoji": "\ud83d\udfe4",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        },
+        {
+            "id": "coleman",
+            "title": "COLEMAN",
+            "subtitle": "MEDALIST",
+            "description": "Kicked the most goals in a home-and-away season. Includes \"Leading Goalkicker Medallists\" awarded prior to the first Coleman medal in 1955.",
+            "emoji": "\ud83c\udfc5",
+            "showOnLaunch": false,
+            "theme": null,
+            "type": null,
+            "imgUrl": null
+        }
+    ],
+    "vItems": [
+        {
+            "id": "KA",
+            "title": "North Melbourne",
+            "subtitle": null,
+            "description": "Played at least 1 game for the North Melbourne Kangaroos, or currently on their list.",
+            "emoji": "\ud83e\udd98",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        },
+        {
+            "id": "SY",
+            "title": "Sydney Swans",
+            "subtitle": null,
+            "description": "Played at least 1 game for the Sydney Swans, or currently on their list. Includes players who played at least 1 game for South Melbourne.",
+            "emoji": "\ud83e\udda2",
+            "showOnLaunch": false,
+            "theme": "",
+            "type": null,
+            "imgUrl": null
+        },
+        {
+            "id": "goty",
+            "title": "GOAL OF THE YEAR",
+            "subtitle": null,
+            "description": "Has won the Goal of the Year award (since 1976).",
+            "emoji": "\ud83c\udfc5",
+            "showOnLaunch": false,
+            "theme": null,
+            "type": null,
+            "imgUrl": "\/img\/awards\/goty-2.png"
+        }
+    ],
+    "level": 7,
+    "completed": 1095,
+    "correctGuesses": [
+        [
+            867,
+            897,
+            626
+        ],
+        [
+            304,
+            972,
+            976
+        ],
+        [
+            802,
+            939,
+            600
+        ]
+    ],
+    "correctAnswersPlayerMap": [
+        [
+            {
+                "1516": 0,
+                "1692": 5,
+                "1846": 178,
+                "2270": 0,
+                "2612": 2,
+                "2989": 520,
+                "3842": 11,
+                "4656": 30,
+                "5109": 5,
+                "5825": 104,
+                "5892": 1,
+                "6809": 0,
+                "7440": 11
+            },
+            {
+                "166": 0,
+                "216": 0,
+                "311": 0,
+                "407": 5,
+                "642": 2,
+                "935": 23,
+                "1222": 0,
+                "1473": 0,
+                "1792": 63,
+                "1968": 47,
+                "2112": 0,
+                "2428": 0,
+                "2699": 0,
+                "3011": 0,
+                "3635": 5,
+                "3806": 43,
+                "4244": 9,
+                "4287": 160,
+                "4611": 9,
+                "4699": 0,
+                "4841": 511,
+                "5449": 20,
+                "6945": 0
+            },
+            {
+                "2244": 38,
+                "4156": 364,
+                "4937": 219,
+                "6570": 5
+            }
+        ],
+        [
+            {
+                "333": 29,
+                "4051": 0,
+                "4136": 8,
+                "6551": 33,
+                "7245": 234
+            },
+            {
+                "630": 54,
+                "725": 0,
+                "749": 0,
+                "1199": 0,
+                "1871": 2,
+                "2089": 28,
+                "2487": 0,
+                "2519": 0,
+                "2859": 0,
+                "3512": 0,
+                "3515": 0,
+                "4029": 0,
+                "4298": 129,
+                "4325": 2,
+                "4350": 5,
+                "4607": 424,
+                "4609": 0,
+                "4646": 0,
+                "4671": 0,
+                "4699": 0,
+                "4745": 0,
+                "4888": 1,
+                "5156": 17,
+                "5247": 0,
+                "5594": 0,
+                "5597": 0,
+                "5844": 0,
+                "5860": 11,
+                "5953": 0,
+                "6263": 0,
+                "6659": 0,
+                "6717": 0,
+                "6837": 0,
+                "7092": 299,
+                "7144": 0
+            },
+            {
+                "1044": 7,
+                "3038": 0,
+                "4607": 261,
+                "4856": 1,
+                "5573": 0,
+                "7178": 707
+            }
+        ],
+        [
+            {
+                "1332": 474,
+                "3129": 235,
+                "3817": 62,
+                "4559": 1,
+                "7184": 19,
+                "7440": 11
+            },
+            {
+                "1740": 794,
+                "2603": 0,
+                "4559": 0,
+                "4607": 126,
+                "4662": 19
+            },
+            {
+                "2603": 108,
+                "4607": 227,
+                "4662": 4,
+                "4937": 5,
+                "5136": 215,
+                "7184": 41
+            }
+        ]
+    ],
+    "started": 1587,
+    "scoreMap": [
+        10,
+        27,
+        26,
+        41,
+        77,
+        140,
+        169,
+        238,
+        210,
+        157
+    ],
+    "social": null
+}
