@@ -63,7 +63,7 @@ jobs:
         run: |
           set -euo pipefail
           case "$BACKFILL" in ''|*[!0-9]*) echo "::error::backfill_days must be a whole number, got '$BACKFILL'"; exit 1;; esac
-          LAST=$(( BACKFILL > 1 ? BACKFILL : 1 ))
+          LAST=$(( BACKFILL > 2 ? BACKFILL : 2 ))
           FETCHED=0; SKIPPED=0; MISSING=0; MISS_RUN=0
           STOP_AFTER=14   # stop backfilling after this many unavailable days in a row (the archive has started)
           for i in $(seq 0 "$LAST"); do
