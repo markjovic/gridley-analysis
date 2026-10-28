@@ -1,8 +1,7 @@
 # Copies Gridley's player list and recent daily grids into this repository (data/), commits them so the
 # archive builds up over time, then publishes the site to GitHub Pages.
-# Runs every hour (so today's answers and pick percentages stay current through the day), on every upload to
-# main, and on demand. The run at 40 past 13:00 UTC is just after midnight Melbourne time (AEDT), so it picks
-# up each new day's grid.
+# Runs about every 3 hours through the Melbourne day (so today's answers and pick percentages stay current), just
+# after midnight Melbourne time (to pick up each new day's grid), on every upload to main, and on demand.
 # On demand (Actions tab > Run workflow) you can set "backfill_days" to also fetch older grids that aren't archived yet.
 name: Archive grids and deploy
 
@@ -10,7 +9,13 @@ on:
   push:
     branches: [main]
   schedule:
-    - cron: '40 * * * *'   # hourly, at 40 past (GitHub may start scheduled runs a few minutes late)
+    # GitHub schedules in UTC. Melbourne times shown for daylight saving (AEDT, UTC+11) / standard time (AEST, UTC+10):
+    #   21:40 UTC = 8:40am / 7:40am     00:40 UTC = 11:40am / 10:40am    03:40 UTC = 2:40pm / 1:40pm
+    #   06:40 UTC = 5:40pm / 4:40pm     09:40 UTC = 8:40pm / 7:40pm      12:40 UTC = 11:40pm / 10:40pm
+    #   13:40 UTC = 12:40am (new day, AEDT) / 11:40pm    14:40 UTC = 1:40am / 12:40am (new day, AEST)
+    # Two after-midnight runs, so the new day's grid is fetched in both daylight saving and standard time.
+    # GitHub often starts scheduled runs late, sometimes by hours, and can skip some when it's busy.
+    - cron: '40 0,3,6,9,12,14,21 * * *'
   workflow_dispatch:
     inputs:
       backfill_days:
